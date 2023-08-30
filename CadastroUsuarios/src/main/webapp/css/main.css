@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+   text-align: center;
+   justify-content: center;
+   background-color: #0c192c;
+   padding: 20px;
+   width: auto;
+ 
+}
+
+h1 {
+    color: rgb(172, 181, 17);
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 40px;
+}
+
+h2 {
+    color: rgb(172, 181, 17);
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}

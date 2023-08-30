@@ -1,0 +1,257 @@
+@charset "UTF-8";
+*{
+	background-color: #0c192c;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.container div{
+	width: 1100px;
+	padding: 20px;
+	
+	margin: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.body > div {
+	margin-top: 0;
+  }
+
+.container {
+	
+	display: grid;
+	grid-template-rows:5% 5% 5%;
+	grid-template-columns: 10% 10% 10%;
+}
+
+ .grid-areas{
+	grid-template-areas: 
+	"header" "header" "header" 
+	"body" "body" "body" 
+	"hiperlink"  "hiperlink" "hiperlink" ;
+
+ }
+
+ 
+.foto-perfil{
+	border-radius: 100%;
+	max-width: 150px;
+	border: 3px solid rgba(14, 14, 16, 0.797);
+	align-items: right;
+ }
+
+ .papo-cabeca{
+	border-radius: 100%;
+	max-width: 250px;
+	border: 3px solid rgba(14, 14, 16, 0.797);
+	align-items: right;
+	object-position: right;
+ }
+
+h1{
+	
+		color: rgb(225, 247, 32);
+		font-size: xx-large;
+		font-family: Arial, Helvetica, sans-serif;
+
+	
+}
+
+
+h3{ 
+	color: rgb(225, 247, 32);
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.objet{
+	justify-content: center;
+}
+
+ ul, li{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+h1 {
+	text-align: center;
+}
+
+.header{
+	grid-area: header;
+	width: 100%;
+	height: 100%;
+}
+
+.body{
+	
+	grid-template-rows: 50% 50%;
+	grid-template-columns: auto;
+	grid-area: body;
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 100px;
+  	margin-right: 50px;
+}
+
+.exprof{
+	display: flex;
+	
+	margin-left: 50px;
+  	margin-right: 50px;
+	padding: 20px;
+}
+
+.form{
+	display: flex;
+	
+	margin-left: 50px;
+  	margin-right: 50px;
+	padding: 20px;
+}
+
+
+.hiperlink{
+	grid-area: hiperlink;
+	width: 100%;
+	height: 100%;
+}
+
+
+.bolhas {
+	
+	display: flex;
+	
+}
+
+.bolhas span{
+	width: 30px;
+	height: 30px;
+	background: #e5ff00;
+	margin: 0 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #e5ff0044, 0 0 50px #e5ff00, 0 0 100px #e5ff00;
+	animation: animar calc(130s / var(--i))  linear infinite;
+}
+
+@keyframes animar{
+	0%{
+		transform: translateY(100vh) scale(0);
+	}
+	100%{
+		transform: translateY(-5vh) scale(1);
+	}
+}
+
+.bolhas span:nth-of-type(even) {
+	background: #2dc3ff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #2dc3ff44, 0 0 50px #2dc3ff, 0 0 100px #2dc3ff;
+
+}
+
+.instagram{
+	border-radius: 100%;
+	width: 30px;
+}
+
+.linkedin{
+	border-radius: 80%;
+	width: 28px;
+}
+
+.facebook{
+	border-radius: 80%;
+	width: 28px;
+}
+
+.github{
+	border-radius: 80%;
+	width: 28px;
+}
+
+.hiperlink{
+	text-align: center;
+}
+
+/* Adicione essas regras CSS ao seu arquivo _css/style.css */
+
+/* Defina espaçamento entre as seções */
+.header,
+.body,
+.hiperlink {
+  margin: 20px;
+}
+
+/* Espaçamento interno das seções */
+.info,
+.exprof,
+.form,
+.hiperlink {
+  padding: 20px;
+
+}
+
+/* Centralize o conteúdo nas seções */
+
+.exprof{
+	display: grid;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center
+  }
+
+/* Espaçamento entre itens dentro das seções */
+.info ul,
+.exprof ul,
+.form ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.info li,
+.exprof li,
+.form li {
+  margin-bottom: 5px;
+}
+
+/* Ajuste do tamanho das imagens de mídia social */
+.instagram,
+.linkedin,
+.facebook,
+.github {
+  width: 28px;
+  height: 28px;
+  margin: 0 5px;
+}
+
+/* Reduza o espaçamento superior nas seções de corpo */
+.body > div {
+  margin-top: 0;
+}
+
+/* Estilize o cabeçalho */
+.header h1 {
+  color: rgb(225, 247, 32);
+  margin-bottom: 10px;
+}
+
+/* Aumente o tamanho da fonte das seções */
+.hiperlink a {
+	font-size: 20px;
+  }
+  
